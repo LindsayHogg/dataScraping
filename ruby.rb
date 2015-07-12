@@ -1,8 +1,12 @@
 require 'nokogiri'
 require 'open-uri'
 
-data.at_css('#content').text
+url = "http://tinybuddha.com/category/blog/happiness-fun-blog/"
 
-content.index do |articles|
+data = Nokogiri::HTML(open(url))
+
+content = data.css('#content')
+
+content.each do |articles|
 	puts data.at_css('#content').text
 end
