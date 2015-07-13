@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -20,7 +20,8 @@
 	        <tr>
 	          <th scope="row">1</th>
 
-	          <td><%= content = data.css('#content').text %></td>
+	          <td><%= content.at_css('#content').text %></td>
+	          
 	          <td>Otto</td>
 	          <td>@mdo</td>
 	        </tr>
@@ -39,5 +40,6 @@
 	      </tbody>
 	    </table>
 	</div>
+<% end %>
 </body>
 </html>

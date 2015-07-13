@@ -8,13 +8,13 @@ get '/' do
 	@content = data.css('#content')
 	erb :shows
 
-	# @content.each do |articles|
-	# puts data.at_css('#content').text
-	# end
+
 
 end
 
-
+	# @content.each do |articles|
+	# puts data.at_css('#content').text
+	# end
 
 
 
